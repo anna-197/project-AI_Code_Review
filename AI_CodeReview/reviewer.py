@@ -41,7 +41,7 @@ def post_comment(repo, pr_number, token, review):
 def main():
     repo = os.environ.get("GITHUB_REPOSITORY")
     pr_number = os.environ.get("PR_NUMBER")
-    token = os.environ.get("GITHUB_TOKEN")
+    token = os.eron.get("GITHUB_TOKEN")
 
     if not repo or not pr_number or not token:
         print("Missing required environment variables.")
