@@ -47,7 +47,7 @@ def main():
         print("Missing required environment variables.")
         sys.exit(1)
 
-    print(f"Fetching PR #{pr_number} from {repo}...")
+    print(f"Fetching PR #{pr_number} from the {repo}...")
     files = get_pr_files(repo, pr_number, token)
     prompt = build_prompt(files)
     print("Sending to OpenAI...")
