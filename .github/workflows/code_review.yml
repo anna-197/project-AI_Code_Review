@@ -7,6 +7,10 @@ on:
 jobs:
   review:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+      issues: write  # allows posting comments
 
     steps:
       - name: Checkout code
